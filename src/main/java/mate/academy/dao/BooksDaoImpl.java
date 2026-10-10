@@ -114,7 +114,7 @@ public class BooksDaoImpl implements BooksDao {
                 throw new RuntimeException("Expected to insert at least one row");
             }
         } catch (SQLException e) {
-            throw new DataProcessingException("Can't add new book " + book, e);
+            throw new DataProcessingException("Can't update book " + book, e);
         }
 
         return book;
